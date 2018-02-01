@@ -1,13 +1,13 @@
-loopback-field-permissions-mixin
+loopback-allowed-properties-mixin
 ===============
 
-[![npm version](https://badge.fury.io/js/loopback-field-permissions-mixin.svg)](https://badge.fury.io/js/loopback-field-permissions-mixin) [![Build Status](https://travis-ci.org/arondn2/loopback-field-permissions-mixin.svg?branch=master)](https://travis-ci.org/arondn2/loopback-field-permissions-mixin)
-[![Coverage Status](https://coveralls.io/repos/github/arondn2/loopback-field-permissions-mixin/badge.svg?branch=master)](https://coveralls.io/github/arondn2/loopback-field-permissions-mixin?branch=master)
+[![npm version](https://badge.fury.io/js/loopback-allowed-properties-mixin.svg)](https://badge.fury.io/js/loopback-allowed-properties-mixin) [![Build Status](https://travis-ci.org/arondn2/loopback-allowed-properties-mixin.svg?branch=master)](https://travis-ci.org/arondn2/loopback-allowed-properties-mixin)
+[![Coverage Status](https://coveralls.io/repos/github/arondn2/loopback-allowed-properties-mixin/badge.svg?branch=master)](https://coveralls.io/github/arondn2/loopback-allowed-properties-mixin?branch=master)
 
 Loopback mixin to set what fields can be written in request.
 
 ## Installation
 
-`npm install loopback-field-permissions-mixin --save`
+`npm install loopback-allowed-properties-mixin --save`
 
 ## Usage

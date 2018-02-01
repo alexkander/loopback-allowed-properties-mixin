@@ -1,1 +1,1 @@
-module.exports = require('./lib/loopback-field-permissions-mixin');
+module.exports = require('./lib/loopback-allowed-properties-mixin');
