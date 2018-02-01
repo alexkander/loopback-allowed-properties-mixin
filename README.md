@@ -25,7 +25,7 @@ You must add config setup to `server/model-config.json`.
     ],
     "mixins": [
       "loopback/common/mixins",
-      "../node_modules/loopback-ds-timestamp-mixin",
+      "../node_modules/loopback-allowed-properties-mixin",
       "../common/mixins"
     ]
   }
