@@ -1,7 +1,7 @@
 {
   "name": "loopback-allowed-properties-mixin",
   "version": "0.1.0",
-  "description": "A mixin to enable readonly properties for loopback Models",
+  "description": "Loopback mixin to set what fields can be received in request.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec",
@@ -17,10 +17,10 @@
   "keywords": [
     "strongloop",
     "loopback",
-    "express",
     "web",
     "security",
-    "framework"
+    "framework",
+    "mixin"
   ],
   "author": "Alex J. Rondon <arondn2@gmail.com> (https://github.com/arondn2)",
   "license": "MIT",
