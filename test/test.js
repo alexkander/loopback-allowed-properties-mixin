@@ -7,7 +7,7 @@ const supertestp = require("supertest-as-promised")
 
 const api = supertestp('http://localhost:8000');
 
-const LoopbackAllowedPropertiesMixin = require('../');
+const LoopbackAllowedPropertiesMixin = require('../allowed-properties');
 
 // -----------------------------------------------------------------------------
 // SETUP LOOPBACK SERVER -------------------------------------------------------
