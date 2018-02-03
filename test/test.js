@@ -3,7 +3,7 @@
 const assert     = require('assert');
 const expect     = require('chai').expect;
 const loopback   = require('loopback');
-const supertestp = require("supertest-as-promised")
+const supertestp = require('supertest-as-promised')
 
 const api = supertestp('http://localhost:8000');
 
@@ -16,16 +16,16 @@ const ds     = loopback.createDataSource('memory');
 
 const Person = ds.createModel('person', {}, { plural: 'persons' });
 
-Person.remoteMethod("customMethod", {
-  "isStatic": true,
-  "http": {
-    "path": "/customMethod",
-    "verb": "post"
+Person.remoteMethod('customMethod', {
+  isStatic: true,
+  http: {
+    path: '/customMethod',
+    verb: 'post'
   },
-  "accepts": [
-    { "arg": "data", "type": "object", "http": { "source": "body" } },
+  accepts: [
+    { arg: 'data', type: 'object', http: { source: 'body' } },
   ],
-  "returns": { "root": true, "type": "object" }
+  returns: { root: true, type: 'object' }
 });
 Person.customMethod = function (data, cb) {
   process.nextTick(() => {
@@ -71,9 +71,9 @@ describe('#loopback-allowed-properties-mixin', () => {
 
   it('existing static method', (done) => {
     const data = {
-      name: "Alexander Rondon",
-      email: "arondn2@gmail.com",
-      deparment: "Development"
+      name: 'Alexander Rondon',
+      email: 'arondn2@gmail.com',
+      deparment: 'Development'
     };
     const dataExpected = {
       name: data.name,
@@ -89,8 +89,8 @@ describe('#loopback-allowed-properties-mixin', () => {
 
   it('existing prototype method', (done) => {
     const changes = {
-      name: "Alex J. Rondón",
-      email: "arondon@sirideas.com",
+      name: 'Alex J. Rondón',
+      email: 'arondon@sirideas.com',
     };
     const dataExpected = {
       name: changes.name,
@@ -112,13 +112,13 @@ describe('#loopback-allowed-properties-mixin', () => {
 
   it('custom static customMethod', (done) => {
     const body = {
-      attribute1: "attribute1",
-      attribute2: "attribute2",
-      attribute3: "attribute3",
+      attribute1: 'attribute1',
+      attribute2: 'attribute2',
+      attribute3: 'attribute3',
     };
     const bodyExpected = {
-      attribute1: "attribute1",
-      attribute2: "attribute2",
+      attribute1: 'attribute1',
+      attribute2: 'attribute2',
     };
     api.post('/persons/customMethod')
     .send(body)

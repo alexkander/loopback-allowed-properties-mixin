@@ -43,6 +43,5 @@
     "tests"
   ],
   "dependencies": {
-    "loopback-component-explorer": "^5.2.0"
   }
 }
