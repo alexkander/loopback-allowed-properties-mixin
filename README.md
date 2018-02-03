@@ -42,7 +42,7 @@ Add mixin params in in model definition. Example:
     "status": "string",
   },
   "mixins": {
-    "LoopbackAllowedPropertiesMixin": {
+    "AllowedProperties": {
       "create": [
         "name",
         "email"
