@@ -14,7 +14,7 @@ const LoopbackAllowedPropertiesMixin = require('../allowed-properties');
 const app    = module.exports = loopback();
 const ds     = loopback.createDataSource('memory');
 
-const Person = ds.createModel('person', {}, { plural: 'persons' });
+const Person = ds.createModel('Person', {}, { plural: 'persons' });
 
 Person.remoteMethod('customMethod', {
   isStatic: true,
@@ -45,12 +45,13 @@ LoopbackAllowedPropertiesMixin(Person, {
     'attribute1',
     'attribute2'
   ],
+  'find': [],
 });
 
-const Animal = ds.createModel('animal', {}, { plural: 'animals' });
+const Animal = ds.createModel('Animal', {}, { plural: 'animals' });
 LoopbackAllowedPropertiesMixin(Animal);
 
-const Thing = ds.createModel('thing', {}, { plural: 'things' });
+const Thing = ds.createModel('Thing', {}, { plural: 'things' });
 LoopbackAllowedPropertiesMixin(Thing, { create: true });
 
 app.dataSource('ds', ds);
