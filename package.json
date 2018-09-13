@@ -1,6 +1,6 @@
 {
   "name": "loopback-allowed-properties-mixin",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Loopback mixin to set what fields can be received in request.",
   "main": "index.js",
   "scripts": {
