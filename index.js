@@ -2,6 +2,6 @@
 
 const AllowedProperties = require('./allowed-properties');
 
-module.exports = unction (app) {
+module.exports = function (app) {
   app.loopback.modelBuilder.mixins.define('AllowedProperties', AllowedProperties);
 };
