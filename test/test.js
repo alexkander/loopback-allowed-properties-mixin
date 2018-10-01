@@ -3,7 +3,7 @@
 const assert     = require('assert');
 const expect     = require('chai').expect;
 const loopback   = require('loopback');
-const supertestp = require('supertest-as-promised')
+const supertestp = require('supertest-as-promised');
 
 const api = supertestp('http://localhost:8000');
 
@@ -60,8 +60,6 @@ app.model(Animal);
 app.model(Thing);
 app.use(loopback.rest());
 // SETUP LOOPBACK SERVER END ---------------------------------------------------
-
-
 
 describe('#loopback-allowed-properties-mixin', () => {
 
