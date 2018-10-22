@@ -60,7 +60,7 @@ Add mixin params in model definition. Example:
 
 In the above definition, `create` method will only recieve the request body with properties `name` and `email`, `prototype.patchAttributes` method will only recieve the request body with `name` attribute and finally `setStatus` method will only recieve `status` attribute in the body request.
 
-### Troubles
+## Troubles
 
 If you have any kind of trouble with it, just let me now by raising an issue on the GitHub issue tracker here:
 
